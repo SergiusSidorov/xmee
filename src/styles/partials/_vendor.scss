@@ -2315,12 +2315,16 @@ ul {
   display: none;
 }
 .fxt-template-layout5 .checkbox input[type="checkbox"]:checked + label::after {
-  font-family: 'Font Awesome 5 Free';
-  content: "\f00c";
-  font-weight: 900;
-  color: #ffffff;
-  right: 15px;
-  top: 4px;
+  content: " ";
+  color: transparent;
+  right: 20px;
+  top: 7px;
+  transform: rotate(45deg);
+  height: 8px;
+  width: 4px;
+  margin-left: 10%;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 .fxt-template-layout5 .checkbox input[type="checkbox"]:checked + label::before {
   background-color: #0e9d88;
