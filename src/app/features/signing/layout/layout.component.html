@@ -1,0 +1,71 @@
+<div id="wrapper"
+     class="wrapper">
+  <div class="fxt-template-layout5">
+
+
+    <div class="fxt-bg-img fxt-none-767">
+      <div class="fxt-intro">
+        <div class="sub-title">Welcome To</div>
+        <h1>Our xmee</h1>
+        <p>Grursus mal suada faci lisis Lorem ipsum dolarorit ametion consectetur elit. Vesti ulum nec the dumm.</p>
+      </div>
+    </div>
+
+    <div class="fxt-bg-color">
+      <div class="fxt-header">
+        <a routerLink="/"
+           class="fxt-logo"><img src="assets/img/logo-5.png"
+               alt="Logo"></a>
+        <div class="fxt-page-switcher">
+          <a routerLink="/login"
+             routerLinkActive="active"
+             class="switcher-text switcher-text1">LogIn</a>
+          <a routerLink="/register"
+             routerLinkActive="active"
+             class="switcher-text switcher-text2">Register</a>
+        </div>
+      </div>
+      <div class="fxt-form">
+
+        <ng-container *ngIf="isBrowser">
+          <router-outlet></router-outlet>
+        </ng-container>
+
+      </div>
+      <div class="fxt-footer" *ngIf="isBrowser">
+        <ul class="fxt-socials">
+          <li class="fxt-facebook flow-up">
+            <social-button iconName="facebook-f"
+                           title="Facebook">
+            </social-button>
+          </li>
+
+          <li class="fxt-twitter flow-up">
+            <social-button iconName="twitter"
+                           title="Twitter">
+            </social-button>
+          </li>
+
+          <li class="fxt-google flow-up">
+            <social-button iconName="google-plus-g"
+                           title="Google">
+            </social-button>
+          </li>
+
+          <li class="fxt-linkedin flow-up">
+            <social-button iconName="linkedin-in"
+                           title="Linkedin">
+            </social-button>
+          </li>
+
+          <li class="fxt-pinterest flow-up">
+            <social-button iconName="pinterest-p"
+                           title="Pinterest">
+            </social-button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
