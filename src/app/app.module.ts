@@ -8,7 +8,6 @@ import { CoreModule } from './core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -21,8 +20,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
 
     CoreModule,
-
-    NgbModule,
   ],
   declarations: [
     AppComponent
